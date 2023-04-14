@@ -26,30 +26,100 @@
 
     <div id="wrap">
 
-        <h1>꾸러기 게시판</h1>
+        <div class="main-title-wrapper">
+            <h1 class="main-title">꾸러기 게시판</h1>
+            <button class="add-btn">새 글 쓰기</button>
+        </div>
+
         <div class="card-container">
-            <section class="card">
-                <div class="card-title-wrapper">
-                    <h2 class="card-title">너 머냐공~~</h2>
-                    <div class="time-view-wrapper">
-                        <div class="time"><i class="far fa-clock"></i>2023-04-14 12:50</div>
-                        <div class="view">
-                            <i class="fas fa-eye"></i>
-                            <span class="view-count">15</span>
+            <div class="card-wrapper">
+                <section class="card">
+                    <div class="card-title-wrapper">
+                        <h2 class="card-title">너 머냐공~~</h2>
+                        <div class="time-view-wrapper">
+                            <div class="time"><i class="far fa-clock"></i>2023-04-14 12:50</div>
+                            <div class="view">
+                                <i class="fas fa-eye"></i>
+                                <span class="view-count">15</span>
+                            </div>
                         </div>
                     </div>
+                    <div class="card-content">
+                        <p>
+                            abcsdfjklaskfjdklasjfldjsafldlajfsf
+                            sdjflaksjfdlksajflsakjflsdakjfjaskldf
+                            sljdkfsajlfdsjflksjlfksdajflskdajfdsakl
+                            sdjflsajflksdajfflsajfldsjflsjalfdjsaflk
+                            sajdflksajfdlsajflsdjlfkjslfjdafsjdlk
+                        </p>
+                    </div>
+                </section>
+                <div class="card-btn-group">
+                    <button class="del-btn">
+                        <i class="fas fa-times"></i>
+                    </button>
                 </div>
-                <div class="card-content">
-                    <p>
-                        abcsdfjklaskfjdklasjfldjsafldlajfsf
-                        sdjflaksjfdlksajflsakjflsdakjfjaskldf
-                        sljdkfsajlfdsjflksjlfksdajflskdajfdsakl
-                        sdjflsajflksdajfflsajfldsjflsjalfdjsaflk
-                        sajdflksajfdlsajflsdjlfkjslfjdafsjdlk
-                    </p>
+            </div>
+
+            <div class="card-wrapper">
+                <section class="card">
+                    <div class="card-title-wrapper">
+                        <h2 class="card-title">너 머냐공~~</h2>
+                        <div class="time-view-wrapper">
+                            <div class="time"><i class="far fa-clock"></i>2023-04-14 12:50</div>
+                            <div class="view">
+                                <i class="fas fa-eye"></i>
+                                <span class="view-count">15</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p>
+                            abcsdfjklaskfjdklasjfldjsafldlajfsf
+                            sdjflaksjfdlksajflsakjflsdakjfjaskldf
+                            sljdkfsajlfdsjflksjlfksdajflskdajfdsakl
+                            sdjflsajflksdajfflsajfldsjflsjalfdjsaflk
+                            sajdflksajfdlsajflsdjlfkjslfjdafsjdlk
+                        </p>
+                    </div>
+                </section>
+                <div class="card-btn-group">
+                    <button class="del-btn">
+                        <i class="fas fa-times"></i>
+                    </button>
                 </div>
-            </section>
-            
+            </div>
+
+
+            <div class="card-wrapper">
+                <section class="card">
+                    <div class="card-title-wrapper">
+                        <h2 class="card-title">너 머냐공~~</h2>
+                        <div class="time-view-wrapper">
+                            <div class="time"><i class="far fa-clock"></i>2023-04-14 12:50</div>
+                            <div class="view">
+                                <i class="fas fa-eye"></i>
+                                <span class="view-count">15</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <p>
+                            abcsdfjklaskfjdklasjfldjsafldlajfsf
+                            sdjflaksjfdlksajflsakjflsdakjfjaskldf
+                            sljdkfsajlfdsjflksjlfksdajflskdajfdsakl
+                            sdjflsajflksdajfflsajfldsjflsjalfdjsaflk
+                            sajdflksajfdlsajflsdjlfkjslfjdafsjdlk
+                        </p>
+                    </div>
+                </section>
+                <div class="card-btn-group">
+                    <button class="del-btn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+
         </div>
 
     </div>
@@ -58,25 +128,39 @@
 
     <script>
         function removeDown(e) {
-            const $targetCard = e.target.closest('.card');
-            $targetCard.removeAttribute('id', 'card-down');
+            if (!e.target.matches('.card-container *')) return;
+            const $targetCard = e.target.closest('.card-wrapper');
+            $targetCard?.removeAttribute('id', 'card-down');
         }
 
         function removeHover(e) {
+            if (!e.target.matches('.card-container *')) return;
             const $targetCard = e.target.closest('.card');
-            $targetCard.classList.remove('card-hover');
+            $targetCard?.classList.remove('card-hover');
+
+            const $delBtn = e.target.closest('.card-wrapper')?.querySelector('.del-btn');
+            $delBtn.style.opacity = '0';
         }
 
         const $cardContainer = document.querySelector('.card-container');
 
         $cardContainer.onmouseover = e => {
+
+            if (!e.target.matches('.card-container *')) return;
+
             const $targetCard = e.target.closest('.card');
-            $targetCard.classList.add('card-hover');
+            $targetCard?.classList.add('card-hover');
+
+            const $delBtn = e.target.closest('.card-wrapper')?.querySelector('.del-btn');
+            $delBtn.style.opacity = '1';
         }
 
         $cardContainer.onmousedown = e => {
-            const $targetCard = e.target.closest('.card');
-            $targetCard.setAttribute('id', 'card-down');
+
+            if (!e.target.matches('.card-container *')) return;
+
+            const $targetCard = e.target.closest('.card-wrapper');
+            $targetCard?.setAttribute('id', 'card-down');
         };
 
         $cardContainer.onmouseup = removeDown;
