@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>Welcome! 꾸꾸까까야</h1>
+    <a href="/card/list">게시판으로 이동</a>
 </body>
 </html>
