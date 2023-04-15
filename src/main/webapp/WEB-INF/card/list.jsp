@@ -49,8 +49,6 @@
                             abcsdfjklaskfjdklasjfldjsafldlajfsf
                             sdjflaksjfdlksajflsakjflsdakjfjaskldf
                             sljdkfsajlfdsjflksjlfksdajflskdajfdsakl
-                            sdjflsajflksdajfflsajfldsjflsjalfdjsaflk
-                            sajdflksajfdlsajflsdjlfkjslfjdafsjdlk
                         </p>
                     </div>
                 </section>
@@ -78,8 +76,6 @@
                             abcsdfjklaskfjdklasjfldjsafldlajfsf
                             sdjflaksjfdlksajflsakjflsdakjfjaskldf
                             sljdkfsajlfdsjflksjlfksdajflskdajfdsakl
-                            sdjflsajflksdajfflsajfldsjflsjalfdjsaflk
-                            sajdflksajfdlsajflsdjlfkjslfjdafsjdlk
                         </p>
                     </div>
                 </section>
@@ -108,8 +104,6 @@
                             abcsdfjklaskfjdklasjfldjsafldlajfsf
                             sdjflaksjfdlksajflsakjflsdakjfjaskldf
                             sljdkfsajlfdsjflksjlfksdajflskdajfdsakl
-                            sdjflsajflksdajfflsajfldsjflsjalfdjsaflk
-                            sajdflksajfdlsajflsdjlfkjslfjdafsjdlk
                         </p>
                     </div>
                 </section>

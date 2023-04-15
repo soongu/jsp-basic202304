@@ -1,0 +1,13 @@
+
+#wrap {
+    width: 60%;
+    margin: 150px auto 0;
+}
+
+.main-title {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-align: center;
+    margin-bottom: 70px;
+}

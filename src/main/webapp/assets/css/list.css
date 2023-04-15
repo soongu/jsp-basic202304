@@ -42,6 +42,7 @@
 }
 
 .card-container .card {
+    height: 370px;
     border-radius: 20px;
     box-shadow: 0 15px 0 #999;
     overflow: hidden;
@@ -103,10 +104,13 @@
     margin-right: 4px;
 }
 
+.card-container .card .card-content {
+
+}
 .card-container .card .card-content p {
+    text-align: justify;
     font-size: 18px;
     line-height: 1.4;
-    text-align: justify;
     padding: 40px 25px;
 }
 
