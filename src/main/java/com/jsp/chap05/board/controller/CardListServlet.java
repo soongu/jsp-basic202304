@@ -1,4 +1,4 @@
-package com.jsp.chap02.board.controller;
+package com.jsp.chap05.board.controller;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

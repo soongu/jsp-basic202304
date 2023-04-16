@@ -1,6 +1,5 @@
 package com.jsp;
 
-import com.jsp.chap01.servlet.HelloServlet;
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.WebResourceRoot;
 import org.apache.catalina.core.StandardContext;
@@ -20,7 +19,7 @@ public class JspStarterMain {
         //Look for that variable and default to 8080 if it isn't there.
         String webPort = System.getenv("PORT");
         if(webPort == null || webPort.isEmpty()) {
-            webPort = "8383";
+            webPort = "8384";
         }
 
         tomcat.setPort(Integer.parseInt(webPort));

@@ -1,4 +1,4 @@
-package com.jsp.chap02.board.entity;
+package com.jsp.chap05.board.entity;
 
 import java.time.LocalDateTime;
 
