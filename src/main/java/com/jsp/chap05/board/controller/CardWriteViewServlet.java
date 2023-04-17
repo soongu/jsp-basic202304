@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/card/write")
+//@WebServlet("/card/write")
 public class CardWriteViewServlet extends HttpServlet {
 
     @Override

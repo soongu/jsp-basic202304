@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/card/list")
+//@WebServlet("/card/list")
 public class CardListServlet extends HttpServlet {
 
     @Override
