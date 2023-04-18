@@ -43,6 +43,7 @@ public class ProcessServlet extends HttpServlet {
         // request객체는 하나의 요청간에 데이터 수송을 할 수 있음.
         request.setAttribute("dl", dancerList);
 
+
         RequestDispatcher dp
                 = request.getRequestDispatcher("/WEB-INF/chap04/dancer/list.jsp");
         dp.forward(request, resp);
